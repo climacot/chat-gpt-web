@@ -14,8 +14,8 @@ import remarkGfm from 'remark-gfm'
 import type { Message } from 'ai/react'
 
 const convert = (mss: IMessage[]) => {
-  let mee: Message[] = []
-  mss.forEach((m, i) => {
+  const mee: Message[] = []
+  mss.forEach((m) => {
     mee.push({ content: m.user, role: 'user', id: m.id + 1 })
     mee.push({ content: m.model, role: 'assistant', id: m.id + 2 })
   })
@@ -58,7 +58,7 @@ function AiChat({ id, messages: mss }: { id: string; messages: IMessage[] }) {
                 <ReactMarkdown
                   remarkPlugins={[remarkGfm]}
                   components={{
-                    code({ node, inline, className, children, ...props }) {
+                    code({ inline, className, children, ...props }) {
                       const match = /language-(\w+)/.exec(className || '')
                       return !inline && match ? (
                         <SyntaxHighlighter
