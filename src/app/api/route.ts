@@ -8,7 +8,7 @@ const config = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 })
 
-export const openai = new OpenAIApi(config)
+const openai = new OpenAIApi(config)
 
 export async function POST(request: NextRequest) {
   const { messages }: { messages: ChatCompletionRequestMessage[] } = await request.json()
