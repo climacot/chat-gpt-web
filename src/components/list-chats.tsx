@@ -8,10 +8,12 @@ function ListChats({ uid }: { uid: string }) {
   const { chats } = useChats(uid)
 
   return (
-    <ul>
+    <ul className="flex flex-col gap-2">
       {chats?.map((chat) => (
-        <li key={chat}>
-          <Link href={paths.chat(chat)}>{chat}</Link>
+        <li key={chat} className="flex">
+          <Link href={paths.chat(chat)} className="flex-1 rounded-md border px-2 py-1 hover:border-green-600">
+            {chat}
+          </Link>
         </li>
       ))}
     </ul>
