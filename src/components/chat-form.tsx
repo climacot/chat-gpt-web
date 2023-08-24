@@ -12,7 +12,7 @@ function ChatForm({ id }: Props) {
 
   if (isLoading) {
     return (
-      <section className="flex justify-center items-center">
+      <section className="flex items-center justify-center">
         <span>Chat is loading...</span>
       </section>
     )
@@ -20,7 +20,7 @@ function ChatForm({ id }: Props) {
 
   if (error) {
     return (
-      <section className="flex justify-center items-center">
+      <section className="flex items-center justify-center">
         <span>{error.message}</span>
       </section>
     )
@@ -28,7 +28,7 @@ function ChatForm({ id }: Props) {
 
   if (!chat) {
     return (
-      <section className="flex justify-center items-center">
+      <section className="flex items-center justify-center">
         <span>The chat does not exist</span>
       </section>
     )

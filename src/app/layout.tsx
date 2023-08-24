@@ -21,7 +21,7 @@ interface Props {
 function RootLayout({ children }: Props) {
   return (
     <html lang="es">
-      <body className={clsx(inter.className, 'h-screen grid grid-rows-body')}>
+      <body className={clsx(inter.className, 'grid h-screen grid-rows-body')}>
         <Providers>
           <Header />
           <section className="grid grid-cols-section overflow-hidden">

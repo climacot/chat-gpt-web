@@ -52,7 +52,7 @@ function AiChat({ id, messages: mss }: { id: string; messages: IMessage[] }) {
       <ul ref={ref} className="overflow-y-scroll">
         {messages.map((m) => (
           <li key={m.id}>
-            <div className={clsx('flex p-4 gap-4 border-b-[1px]', m.role === 'user' ? 'bg-white' : 'bg-gray-50')}>
+            <div className={clsx('flex gap-4 border-b-[1px] p-4', m.role === 'user' ? 'bg-white' : 'bg-gray-50')}>
               <div>{m.role === 'assistant' ? <Gpt /> : <Avatar />}</div>
               <div>
                 <ReactMarkdown
