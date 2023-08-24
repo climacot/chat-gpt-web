@@ -63,6 +63,7 @@ function AiChat({ id, messages: mss }: { id: string; messages: IMessage[] }) {
                       return !inline && match ? (
                         <SyntaxHighlighter
                           {...props}
+                          // eslint-disable-next-line react/no-children-prop
                           children={String(children).replace(/\n$/, '')}
                           style={dark}
                           language={match[1]}
