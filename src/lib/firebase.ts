@@ -4,13 +4,13 @@ import { getFirestore } from 'firebase/firestore'
 import { initializeApp, getApp, getApps } from 'firebase/app'
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyA4dWw4zyUylzxu0c8WZN9qUBKY-UI3VKc',
-  appId: '1:678296368060:web:7110a063e52b6a0d0771b9',
-  authDomain: 'chat-gpt-web-f24e5.firebaseapp.com',
-  measurementId: 'G-ZQ9KL1D00K',
-  messagingSenderId: '678296368060',
-  projectId: 'chat-gpt-web-f24e5',
-  storageBucket: 'chat-gpt-web-f24e5.appspot.com',
+  apiKey: process.env.NEXT_API_KEY,
+  appId: process.env.NEXT_APP_ID,
+  authDomain: process.env.NEXT_AUTH_DOMAIN,
+  measurementId: process.env.NEXT_MEASUREMENT_ID,
+  messagingSenderId: process.env.NEXT_MESSAGING_SENDER_ID,
+  projectId: process.env.NEXT_PROJECT_ID,
+  storageBucket: process.env.NEXT_STORAGE_BUCKET,
 }
 
 const app = getApps().length <= 0 ? initializeApp(firebaseConfig) : getApp()
