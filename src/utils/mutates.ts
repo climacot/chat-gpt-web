@@ -1,4 +1,4 @@
-import { IChat, IMessage } from './models'
+import { IMessage } from './models'
 import { mutate } from 'swr'
 import { urls } from './constants'
 
