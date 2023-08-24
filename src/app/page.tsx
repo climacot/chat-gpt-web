@@ -1,7 +1,9 @@
 function Home() {
   return (
     <main className="flex items-center justify-center">
-      <h2>Chat GPT web</h2>
+      <h1 className="text-3xl font-bold text-green-600">
+        Chat <span className="rounded-md bg-black/90 px-2 text-white">PGT</span> web
+      </h1>
     </main>
   )
 }

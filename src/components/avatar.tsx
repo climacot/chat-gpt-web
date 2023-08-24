@@ -10,10 +10,10 @@ function Avatar() {
     <Image
       alt={user?.displayName ?? ''}
       className="rounded-full"
-      height={30}
+      height={40}
       priority
       src={user?.photoURL ?? ''}
-      width={30}
+      width={40}
     />
   ) : null
 }
