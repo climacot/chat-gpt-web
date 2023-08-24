@@ -1,6 +1,6 @@
 function Gpt() {
   return (
-    <div className="bg-green-600 text-white w-[30px] h-[30px] flex items-center justify-center rounded-full">
+    <div className="flex h-[30px] w-[30px] items-center justify-center rounded-full bg-green-600 text-white">
       <svg
         width="41"
         height="41"

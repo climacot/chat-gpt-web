@@ -19,11 +19,11 @@ function ListMessages({ messages }: { messages: IMessage[] }) {
     <ul ref={ref} className="overflow-y-scroll">
       {messages.map((message) => (
         <li key={message.id}>
-          <div className="flex p-4 gap-4 border-b-[1px]">
+          <div className="flex gap-4 border-b-[1px] p-4">
             <Avatar />
             <p>{message.user}</p>
           </div>
-          <div className="bg-gray-50 flex p-4 gap-4 border-b-[1px]">
+          <div className="flex gap-4 border-b-[1px] bg-gray-50 p-4">
             <div>
               <Gpt />
             </div>

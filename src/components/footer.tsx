@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="bg-gray-50 border-t-[1px] p-4 flex items-center justify-between">
+    <footer className="flex items-center justify-between border-t-[1px] bg-gray-50 p-4">
       <span>Chat GPT web</span>
       <span>By climacot</span>
     </footer>
